@@ -14,7 +14,10 @@ let score = 0;
 
 function startGame() {
   document.getElementById('intro').style.display = 'none';
-  document.getElementById('game-container').style.display = 'block';
+  document.getElementById('game-container').style.display = 'flex';
+  document.getElementById('final-message').style.display = 'none';
+  currentQuestion = 0;
+  score = 0;
   showQuestion();
 }
 
@@ -48,12 +51,14 @@ function nextQuestion() {
 
 function endGame() {
   document.getElementById('game-container').style.display = 'none';
+  const final = document.getElementById('final-message');
   if (score === questions.length) {
-    document.getElementById('final-message').style.display = 'block';
+    final.innerHTML = '<h2>Congratulations! You got all the answers right!</h2>';
+    final.style.display = 'block';
     triggerConfetti();
   } else {
-    document.getElementById('final-message').innerHTML = '<h2>Great try! You got ' + score + ' out of ' + questions.length + ' correct.</h2>';
-    document.getElementById('final-message').style.display = 'block';
+    final.innerHTML = '<h2>Great try! You got ' + score + ' out of ' + questions.length + ' correct.</h2>';
+    final.style.display = 'block';
   }
 }
 
