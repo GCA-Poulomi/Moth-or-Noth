@@ -14,7 +14,7 @@ let score = 0;
 
 function startGame() {
   document.getElementById('intro').style.display = 'none';
-  document.getElementById('game-container').style.display = 'flex';
+  document.getElementById('game-container').style.display = 'block';
   document.getElementById('final-message').style.display = 'none';
   currentQuestion = 0;
   score = 0;
@@ -57,7 +57,7 @@ function endGame() {
     final.style.display = 'block';
     triggerConfetti();
   } else {
-    final.innerHTML = '<h2>Great try! You got ' + score + ' out of ' + questions.length + ' correct.</h2>';
+    final.innerHTML = `<h2>Great try! You got ${score} out of ${questions.length} correct.</h2>`;
     final.style.display = 'block';
   }
 }
