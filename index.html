@@ -3,34 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moth or Not?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <title>Moth or Not? - Cambridge Moth Ball 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <canvas id="confetti"></canvas>
+  
   <div class="container">
-    <div id="intro">
-      <h1>Moth or Not?</h1>
-      <p>Think you know moths? Let’s find out! Click below to begin.</p>
-      <button onclick="startGame()">Let's Get Started</button>
+    <!-- Intro Section with Hero Image -->
+    <div id="intro" class="intro-section">
+      <div class="hero-image-container">
+        <img src="media/media1.jpg" alt="Beautiful moth" class="hero-image" />
+        <div class="hero-overlay">
+          <h1 class="main-title">Moth or Not?</h1>
+          <p class="subtitle">Think you know moths? Let's find out!</p>
+          <p class="event-info">Cambridge Moth Ball 2025 • National Moth Week</p>
+          <button class="start-btn" onclick="startGame()">
+            <span>Let's Get Started</span>
+            <div class="btn-shine"></div>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <div id="game-container" style="display: none;">
-      <div id="question-container">
-        <img id="moth-image" src="" alt="Moth or Not image" crossorigin="anonymous" />
-        <p id="question-text"></p>
+    <!-- Game Section -->
+    <div id="game-container" class="game-section" style="display: none;">
+      <div class="game-header">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress"></div>
+        </div>
+        
+        <div class="score-display">
+          <span>Score: <span id="score-text">0</span></span>
+          <span>Question <span id="question-number">1</span> of <span id="total-questions">8</span></span>
+        </div>
       </div>
-      <div id="feedback"></div>
-      <div class="button-row">
-        <button onclick="checkAnswer(true)">Moth</button>
-        <button onclick="checkAnswer(false)">Not</button>
+
+      <div class="game-content">
+        <!-- Left side - Question Content -->
+        <div class="question-side">
+          <div class="question-content">
+            <h2 id="question-text" class="question-text"></h2>
+            <div id="feedback" class="feedback"></div>
+            
+            <div class="button-row">
+              <button class="answer-btn moth-btn" onclick="checkAnswer(true)">
+                <span>🦋 Moth</span>
+              </button>
+              <button class="answer-btn not-btn" onclick="checkAnswer(false)">
+                <span>❌ Not</span>
+              </button>
+            </div>
+            
+            <button id="next-btn" class="next-btn" onclick="nextQuestion()" style="display: none;">
+              Next Question →
+            </button>
+          </div>
+        </div>
+
+        <!-- Right side - Image -->
+        <div class="image-side">
+          <div class="image-wrapper">
+            <img id="moth-image" src="" alt="Moth or Not image" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
       </div>
-      <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next</button>
     </div>
 
-    <div id="final-message" style="display: none;"></div>
+    <!-- Final Results Section -->
+    <div id="final-message" class="final-section" style="display: none;">
+      <div class="results-content">
+        <div class="results-icon" id="results-icon"></div>
+        <h2 id="results-title"></h2>
+        <p id="results-subtitle"></p>
+        <div class="score-summary">
+          <span class="final-score" id="final-score"></span>
+        </div>
+        <button class="play-again-btn" onclick="startGame()">Play Again</button>
+        <p class="event-footer">
+          Thank you for participating in Cambridge Moth Ball 2025!<br>
+          <small>Learn more about moths and conservation at Fresh Pond Reservation</small>
+        </p>
+      </div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
