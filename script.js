@@ -2,49 +2,49 @@ const questions = [
   { 
     text: "Has fuzzy antennae?", 
     answer: true, 
-    image: "https://images.unsplash.com/photo-1535090467336-9501f1c3e7e5",
+    image: "media/media2.jpg",
     explanation: "Moths have feathery or fuzzy antennae, unlike butterflies which have club-shaped antennae!"
   },
   { 
     text: "Sleeps during the day?", 
     answer: false, 
-    image: "https://images.unsplash.com/photo-1600099602285-f60a37651a79",
+    image: "media/media3.jpg",
     explanation: "This is too general - while many moths are nocturnal, some are active during the day!"
   },
   { 
     text: "Loves porch lights at night?", 
     answer: true, 
-    image: "https://images.unsplash.com/photo-1623085985524-faad94508ffb",
+    image: "media/media4.jpg",
     explanation: "Moths are famous for being attracted to artificial lights at night!"
   },
   { 
     text: "Makes honey?", 
     answer: false, 
-    image: "https://images.unsplash.com/photo-1589891027565-b0c8e5c94f91",
+    image: "media/media5.jpg",
     explanation: "Only bees make honey! Moths are pollinators but don't produce honey."
   },
   { 
     text: "Pollinates nighttime flowers?", 
     answer: true, 
-    image: "https://images.unsplash.com/photo-1627818821525-34365a3f2db2",
+    image: "media/media6.jpg",
     explanation: "Moths are crucial nighttime pollinators for many flowers, including tobacco and yucca!"
   },
   { 
     text: "Buzzes loudly when flying?", 
     answer: false, 
-    image: "https://images.unsplash.com/photo-1596484553650-f966b7b3e2ee",
+    image: "media/media7.jpg",
     explanation: "Moths typically fly silently, unlike buzzing bees or flies!"
   },
   { 
     text: "Helps feed baby birds?", 
     answer: true, 
-    image: "https://images.unsplash.com/photo-1600865581014-06c1138d3a1b",
+    image: "media/media8.jpg",
     explanation: "Moths and their caterpillars are a vital food source for many bird species!"
   },
   { 
     text: "Drinks nectar from flowers?", 
     answer: true, 
-    image: "https://images.unsplash.com/photo-1623245310904-1592b6093efc",
+    image: "media/media9.jpg",
     explanation: "Many adult moths feed on flower nectar, making them important pollinators!"
   }
 ];
@@ -88,7 +88,18 @@ function showQuestion() {
   
   // Update question content
   document.getElementById('question-text').textContent = question.text;
-  document.getElementById('moth-image').src = question.image;
+  
+  // Handle image loading with error fallback
+  const imageElement = document.getElementById('moth-image');
+  imageElement.onload = function() {
+    console.log('Image loaded successfully:', question.image);
+  };
+  imageElement.onerror = function() {
+    console.error('Failed to load image:', question.image);
+    // Fallback to a placeholder or default image
+    this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+  };
+  imageElement.src = question.image;
   
   // Clear previous feedback and hide next button
   const feedback = document.getElementById('feedback');
@@ -103,9 +114,19 @@ function showQuestion() {
   updateProgressBar();
   updateQuestionCounter();
   
-  // Add entrance animation
-  const questionContainer = document.getElementById('question-container');
-  questionContainer.style.animation = 'slideInUp 0.5s ease-out';
+  // Add entrance animation to question
+  const questionText = document.getElementById('question-text');
+  questionText.style.animation = 'none';
+  setTimeout(() => {
+    questionText.style.animation = 'slideInUp 0.5s ease-out';
+  }, 50);
+  
+  // Add image entrance animation
+  const imageWrapper = document.querySelector('.image-wrapper');
+  imageWrapper.style.animation = 'none';
+  setTimeout(() => {
+    imageWrapper.style.animation = 'fadeIn 0.5s ease-out';
+  }, 200);
 }
 
 function checkAnswer(userAnswer) {
@@ -149,13 +170,14 @@ function checkAnswer(userAnswer) {
 function nextQuestion() {
   currentQuestion++;
   
-  // Add exit animation
-  const questionContainer = document.getElementById('question-container');
-  questionContainer.style.animation = 'fadeOut 0.3s ease-out';
+  // Add subtle transition
+  const gameContent = document.querySelector('.game-content');
+  gameContent.style.opacity = '0.7';
   
   setTimeout(() => {
     showQuestion();
-  }, 300);
+    gameContent.style.opacity = '1';
+  }, 200);
 }
 
 function endGame() {
@@ -173,20 +195,20 @@ function endGame() {
   if (score === questions.length) {
     resultsIcon.textContent = '🏆';
     resultsTitle.textContent = 'Perfect Score!';
-    resultsSubtitle.textContent = 'You\'re a moth expert! Congratulations on getting every question right!';
+    resultsSubtitle.textContent = 'You\'re a moth expert! Congratulations on getting every question right! You clearly know your way around the fascinating world of moths.';
     triggerConfetti();
   } else if (percentage >= 75) {
     resultsIcon.textContent = '🌟';
     resultsTitle.textContent = 'Excellent Work!';
-    resultsSubtitle.textContent = 'You know a lot about moths! Just a few more facts to master.';
+    resultsSubtitle.textContent = 'You know a lot about moths! Just a few more facts to master and you\'ll be a true moth expert.';
   } else if (percentage >= 50) {
     resultsIcon.textContent = '👍';
     resultsTitle.textContent = 'Good Job!';
-    resultsSubtitle.textContent = 'You\'re on your way to becoming a moth expert!';
+    resultsSubtitle.textContent = 'You\'re on your way to becoming a moth expert! Keep learning about these amazing creatures.';
   } else {
     resultsIcon.textContent = '🦋';
     resultsTitle.textContent = 'Keep Learning!';
-    resultsSubtitle.textContent = 'Every expert was once a beginner. Try again to improve your moth knowledge!';
+    resultsSubtitle.textContent = 'Every expert was once a beginner. Try again to improve your moth knowledge! These nocturnal beauties have so much to teach us.';
   }
   
   finalScore.textContent = `${score}/${questions.length}`;
@@ -377,18 +399,23 @@ document.addEventListener('keydown', (e) => {
   switch(e.key) {
     case '1':
     case 'ArrowLeft':
+    case 'm':
+    case 'M':
       if (document.getElementById('next-btn').style.display === 'none') {
         checkAnswer(true);
       }
       break;
     case '2':
     case 'ArrowRight':
+    case 'n':
+    case 'N':
       if (document.getElementById('next-btn').style.display === 'none') {
         checkAnswer(false);
       }
       break;
     case 'Enter':
     case ' ':
+      e.preventDefault();
       if (document.getElementById('next-btn').style.display !== 'none') {
         nextQuestion();
       }
@@ -403,14 +430,41 @@ window.addEventListener('resize', () => {
   canvas.height = window.innerHeight;
 });
 
+// Image preloading and validation
+function preloadImages() {
+  questions.forEach((question, index) => {
+    const img = new Image();
+    img.onload = function() {
+      console.log(`✅ Image ${index + 1} loaded successfully:`, question.image);
+    };
+    img.onerror = function() {
+      console.error(`❌ Failed to load image ${index + 1}:`, question.image);
+    };
+    img.src = question.image;
+  });
+  
+  // Also preload hero image
+  const heroImg = new Image();
+  heroImg.onload = function() {
+    console.log('✅ Hero image loaded successfully');
+  };
+  heroImg.onerror = function() {
+    console.error('❌ Failed to load hero image: media/media1.jpg');
+  };
+  heroImg.src = 'media/media1.jpg';
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   // Set initial question counter
   document.getElementById('total-questions').textContent = questions.length;
   
-  // Preload images for better performance
-  questions.forEach(question => {
-    const img = new Image();
-    img.src = question.image;
-  });
+  // Preload all images for better performance
+  preloadImages();
+  
+  // Add keyboard hint to the page
+  console.log('🎮 Keyboard shortcuts:');
+  console.log('  1, M, ← : Select Moth');
+  console.log('  2, N, → : Select Not');
+  console.log('  Enter/Space : Next Question');
 });
