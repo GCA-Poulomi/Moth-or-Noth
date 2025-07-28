@@ -3,6 +3,7 @@
 **🎮 Play the game here: [moth-or-noth.vercel.app](https://moth-or-noth.vercel.app)** Clicking on the link will open it in a new tab.
 
 Welcome to **Moth or Not?** – a fun, educational browser-based game developed as a companion activity for the **2025 Cambridge Moth Ball**, celebrating **National Moth Week**. This is an **open educational resource** designed to help kids and adults alike test their knowledge of moths and their vital role in nature.
+<img width="4336" height="2794" alt="Screenshot 2025-07-27 at 9 33 58 PM" src="https://github.com/user-attachments/assets/4978a159-290e-4331-bff7-e2d5c9027a4f" />
 
 ## 🎯 About the Game
 
