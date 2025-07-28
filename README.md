@@ -1,7 +1,6 @@
-Play the game here: 
-moth-or-noth.vercel.app  
-
 # 🦋 Moth or Not? – A Web Companion Game for Cambridge Moth Ball 2025
+
+**🎮 Play the game here: [moth-or-noth.vercel.app](https://moth-or-noth.vercel.app)** Clicking on the link will open it in a new tab.
 
 Welcome to **Moth or Not?** – a fun, educational browser-based game developed as a companion activity for the **2025 Cambridge Moth Ball**, celebrating **National Moth Week**. This is an **open educational resource** designed to help kids and adults alike test their knowledge of moths and their vital role in nature.
 
