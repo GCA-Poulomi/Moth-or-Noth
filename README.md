@@ -7,7 +7,7 @@ Welcome to **Moth or Not?** – a fun, educational browser-based game developed 
 This interactive web-based educational instrument serves the greater purpose of knowledge transference through methodical true/false assessments concerning lepidopteran ecology. Initiates must evaluate scientifically precise statements regarding moth morphology, behavioral adaptations, and critical ecological functions, discerning whether each characteristic manifests as **MOTH** or **NOT**. This educational technology emerges from our convergence of environmental science and pedagogical advancement, designed to cultivate scientific curiosity and environmental literacy across diverse populations. The architects of this system pursue deliberate objectives at the intersection of education technology and conservation science, implementing strategic methodologies to achieve fundamental learning outcomes and advance the greater ecological understanding.
 
 **Game Features:**
-- 8 educational questions about moth facts and behaviors
+- 8 educational questions about moth facts and behaviors (more can be added easily with basic coding skills, or using AI)
 - Beautiful side-by-side layout with questions and nature imagery
 - Real-time scoring and progress tracking
 - Detailed explanations for each answer
