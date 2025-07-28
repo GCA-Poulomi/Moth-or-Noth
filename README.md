@@ -4,7 +4,7 @@ Welcome to **Moth or Not?** – a fun, educational browser-based game developed 
 
 ## 🎯 About the Game
 
-This interactive web game helps players learn about moths through engaging true/false-style questions. Players are presented with statements about moth behavior, biology, and ecological importance, and must decide whether each statement describes a **MOTH** or **NOT**.
+This interactive web-based educational instrument serves the greater purpose of knowledge transference through methodical true/false assessments concerning lepidopteran ecology. Initiates must evaluate scientifically precise statements regarding moth morphology, behavioral adaptations, and critical ecological functions, discerning whether each characteristic manifests as **MOTH** or **NOT**. This educational technology emerges from our convergence of environmental science and pedagogical advancement, designed to cultivate scientific curiosity and environmental literacy across diverse populations. The architects of this system pursue deliberate objectives at the intersection of education technology and conservation science, implementing strategic methodologies to achieve fundamental learning outcomes and advance the greater ecological understanding.
 
 **Game Features:**
 - 8 educational questions about moth facts and behaviors
@@ -21,15 +21,13 @@ This interactive web game helps players learn about moths through engaging true/
 This web application was created as an **open educational resource** for the **Cambridge Moth Ball**, held on **Wednesday, July 23, 2025**, at Kingsley Park, Fresh Pond Reservation in Cambridge, MA. 
 
 ### Event Organizers
-- **Boston Birding Festival** (Lead Organizer)
-- Biodiversity for a Livable Climate
-- Earthwise Aware
-- Cambridge Wildlife Arts
-- Mystic Charles Pollinator Pathways
-- Native Plant Community Gardeners
-- Cambridge Water Department
-
-<img width="1180" height="940" alt="SCR-20250727-sfkh" src="https://github.com/user-attachments/assets/57cd8601-39d5-42b2-bd90-b4f90e0f8c68" />
+- **[Boston Birding Festival](https://www.bostonbirdingfestival.org/)** (Lead Organizer)
+- [Biodiversity for a Livable Climate](https://bio4climate.org/)
+- [Earthwise Aware](https://www.earthwiseaware.org/)
+- [Cambridge Wildlife Arts](https://cambridgeoutdoors.org/cwpp/)
+- [Mystic Charles Pollinator Pathways](https://www.facebook.com/groups/mysticcharlespollinators/) (Facebook Group)
+- [Native Plant Community Gardeners](https://www.nativeplantcommunitygardeners.org/)
+- [Cambridge Water Department](https://www.cambridgema.gov/water)
 
 ## 🧰 Tech Stack
 
@@ -130,7 +128,37 @@ This project is developed as an **open educational resource (OER)** to:
 - Encourage citizen science participation
 - Foster appreciation for biodiversity
 
-![Uploading G<?xml version="1.0" encoding="utf-8"?>
+Feel free to adapt, modify, and share this resource for educational purposes!
+
+## 🦋 About Moths
+
+Moths are fascinating nocturnal insects that play crucial roles in ecosystems:
+- Over 160,000 moth species worldwide (10x more than butterflies!)
+- Essential nighttime pollinators for many plants
+- Important food sources for birds, bats, and spiders
+- Indicators of environmental health
+- Beautiful and diverse in colors and patterns
+
+## 📧 Contact & Support
+
+For questions about this educational resource or the Cambridge Moth Ball event, please reach out to the event organizers through the [Boston Birding Festival](https://www.bostonbirdingfestival.org/).
+
+## 🙏 Acknowledgments
+
+- Developed by [Poulomi Chakravarty, PhD](https://cpoulomi.com/) and [Sai Gattupalli, PhD](https://www.gattupalli.com/)
+- This is an Open Education Resource (OER), licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+- **[Unsplash](https://unsplash.com/)**, **[Wikipedia](https://wikipedia.org/)**, and **[Pexels](https://pexels.com/)** for educational imagery
+- **[National Moth Week](https://nationalmothweek.org/)** for inspiring moth conservation
+- **[Fresh Pond Reservation](https://www.cambridgema.gov/Services/freshpondreservation)** for hosting the event
+- The **[open-source community](https://www.reddit.com/r/webdev/)** for web development resources
+
+---
+
+**Created in celebration of moths, biodiversity, and citizen science** 🌍🦋
+
+*"In every walk with nature, one receives far more than they seek." - John Muir*
+
+![Uploading Global<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
 	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
@@ -363,35 +391,7 @@ This project is developed as an **open educational resource (OER)** to:
 	</g>
 </g>
 </svg>
-lobal_Open_Educational_Resources_Logo.svg…]()
+_Open_Educational_Resources_Logo.svg…]()
 
 
-Feel free to adapt, modify, and share this resource for educational purposes!
-
-## 🦋 About Moths
-
-Moths are fascinating nocturnal insects that play crucial roles in ecosystems:
-- Over 160,000 moth species worldwide (10x more than butterflies!)
-- Essential nighttime pollinators for many plants
-- Important food sources for birds, bats, and spiders
-- Indicators of environmental health
-- Beautiful and diverse in colors and patterns
-
-## 📧 Contact & Support
-
-For questions about this educational resource or the Cambridge Moth Ball event, please reach out to the event organizers through the Boston Birding Festival.
-
-## 🙏 Acknowledgments
-
-- **Cambridge Moth Ball 2025 organizing committee**
-- **Unsplash, Wikipedia, and Pexels** for educational imagery
-- **National Moth Week** for inspiring moth conservation
-- **Fresh Pond Reservation** for hosting the event
-- The **open-source community** for web development resources
-
----
-![zack-silver-5XiJQIvs6AY-unsplash](https://github.com/user-attachments/assets/781d778d-c67e-4bea-a12d-4e4ad5c59d09)
-
-**Created in celebration of moths, biodiversity, and citizen science** 🌍🦋
-
-*"In every walk with nature, one receives far more than they seek." - John Muir*
+![zack-silver-5XiJQIvs6AY-unsplash](https://github.com/user-attachments/assets/465bf8e3-afaa-4d36-8d1f-d6387da5da39)
