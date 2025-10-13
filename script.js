@@ -2,151 +2,151 @@ const questions = [
   { 
     text: "Has fuzzy antennae?", 
     answer: true, 
-    image: "media/media2.jpg",
+    image: "media/media2",
     explanation: "Moths have feathery or fuzzy antennae, unlike butterflies which have club-shaped antennae!"
   },
   { 
     text: "Sleeps during the day?", 
     answer: false, 
-    image: "media/media3.jpg",
+    image: "media/media3",
     explanation: "This is too general - while many moths are nocturnal, some are active during the day!"
   },
   { 
     text: "Loves porch lights at night?", 
     answer: true, 
-    image: "media/media4.jpg",
+    image: "media/media4",
     explanation: "Moths are famous for being attracted to artificial lights at night!"
   },
   { 
     text: "Makes honey?", 
     answer: false, 
-    image: "media/media5.jpg",
+    image: "media/media5",
     explanation: "Only bees make honey! Moths are pollinators but don't produce honey."
   },
   { 
     text: "Pollinates nighttime flowers?", 
     answer: true, 
-    image: "media/media6.jpg",
+    image: "media/media6",
     explanation: "Moths are crucial nighttime pollinators for many flowers, including tobacco and yucca!"
   },
   { 
     text: "Buzzes loudly when flying?", 
     answer: false, 
-    image: "media/media7.jpg",
+    image: "media/media7",
     explanation: "Moths typically fly silently, unlike buzzing bees or flies!"
   },
   { 
     text: "Helps feed baby birds?", 
     answer: true, 
-    image: "media/media8.jpg",
+    image: "media/media8",
     explanation: "Moths and their caterpillars are a vital food source for many bird species!"
   },
   { 
     text: "Drinks nectar from flowers?", 
     answer: true, 
-    image: "media/media9.jpg",
+    image: "media/media9",
     explanation: "Many adult moths feed on flower nectar, making them important pollinators!"
   },
   {
     text: "Some adult moths are born without mouths and cannot eat?",
     answer: true,
-    image: "media/media10.jpg",
+    image: "media/media10",
     explanation: "It's true! Species like the Luna moth don't have mouthparts and live only for about a week to mate."
   },
   {
     text: "Evolved to look like bird droppings for camouflage?",
     answer: true,
-    image: "media/media11.jpg",
+    image: "media/media11",
     explanation: "Yes, some moths, like the beautiful wood nymph, have markings that mimic bird droppings to avoid predators."
   },
   {
     text: "Moths outnumber butterfly species by more than 10 to 1?",
     answer: true,
-    image: "media/media12.jpg",
+    image: "media/media12",
     explanation: "There are over 160,000 species of moths, far outnumbering the approximately 18,500 species of butterflies."
   },
   {
     text: "The famous 'wooly bear' caterpillar turns into a butterfly?",
     answer: false,
-    image: "media/media13.jpg",
+    image: "media/media13",
     explanation: "The wooly bear caterpillar transforms into the Isabella tiger moth, not a butterfly."
   },
   {
     text: "Can have a wingspan of nearly a foot?",
     answer: true,
-    image: "media/media14.jpg",
+    image: "media/media14",
     explanation: "The Atlas moth of Southeast Asia is one of the largest moths, with a wingspan that can reach almost 12 inches."
   },
   {
     text: "Some of their caterpillars live underwater?",
     answer: true,
-    image: "media/media15.jpg",
+    image: "media/media15",
     explanation: "Certain species, like the China-mark moths, have aquatic caterpillars that feed on pond plants."
   },
   {
     text: "Only come in dull, brown colors?",
     answer: false,
-    image: "media/media16.jpg",
+    image: "media/media16",
     explanation: "Many moths are incredibly vibrant, coming in all colors of the rainbow, just like butterflies."
   },
   {
     text: "Evolved much later than butterflies?",
     answer: false,
-    image: "media/media17.jpg",
+    image: "media/media17",
     explanation: "Fossil records show that moths evolved long before butterflies, with some fossils dating back 190 million years."
   },
   {
     text: "Can 'jam' the sonar of a hunting bat?",
     answer: true,
-    image: "media/media18.jpg",
+    image: "media/media18",
     explanation: "Some tiger moths can produce ultrasonic clicks to confuse bats and disrupt their echolocation."
   },
   {
     text: "A male can smell a female from over 7 miles away?",
     answer: true,
-    image: "media/media19.jpg",
+    image: "media/media19",
     explanation: "Male giant silkworm moths have incredible antennae that can detect a female's pheromones from miles away."
   },
   {
     text: "All adult moths will eat holes in your clothing?",
     answer: false,
-    image: "media/media20.jpg",
+    image: "media/media20",
     explanation: "Only a couple of species are known for eating fabrics. Most adult moths don't eat clothes at all."
   },
   {
     text: "Can be cannibals in their caterpillar stage?",
     answer: true,
-    image: "media/media21.jpg",
+    image: "media/media21",
     explanation: "Some moth caterpillars, like the Dun-bar, will eat other caterpillars, including their own kind, if food is scarce."
   },
   {
     text: "Are active and fly around even in the middle of winter?",
     answer: true,
-    image: "media/media22.jpg",
+    image: "media/media22",
     explanation: "Some hardy moth species are adapted to fly in the cold and can be spotted on mild winter days."
   },
   {
     text: "Every single moth species spins a cocoon?",
     answer: false,
-    image: "media/media23.jpg",
+    image: "media/media23",
     explanation: "While many moths make cocoons, some burrow underground or into wood to pupate without one."
   },
   {
     text: "All moths are attracted to artificial light?",
     answer: false,
-    image: "media/media24.jpg",
+    image: "media/media24",
     explanation: "While many are drawn to light (positive phototaxis), some species are actually repelled by it."
   },
   {
     text: "Can be as tiny as the tip of a pencil?",
     answer: true,
-    image: "media/media25.jpg",
+    image: "media/media25",
     explanation: "Micromoths can be incredibly small, with some having a wingspan of only a few millimeters."
   },
   {
     text: "One species is famous for a skull-like pattern on its back?",
     answer: true,
-    image: "media/media26.jpg",
+    image: "media/media26",
     explanation: "The Death's-head hawk-moth is well-known for the spooky, skull-shaped marking on its thorax."
   }
 ];
@@ -155,6 +155,48 @@ let currentQuestion = 0;
 let score = 0;
 let gameStarted = false;
 let answeredQuestions = [];
+
+// --- NEW FUNCTION TO FIND IMAGE WITH DIFFERENT EXTENSIONS ---
+/**
+ * Tries to load an image by checking for different file extensions.
+ * @param {string} baseImagePath - The path to the image without the extension (e.g., "media/media2").
+ * @param {HTMLImageElement} imageElement - The <img> element to update.
+ */
+function findAndSetImage(baseImagePath, imageElement) {
+  const extensions = ['jpg', 'jpeg', 'png', 'webp'];
+  let currentExtensionIndex = 0;
+
+  function tryNextExtension() {
+    if (currentExtensionIndex >= extensions.length) {
+      // If all extensions have been tried and failed, show the placeholder.
+      console.error(`Image not found for: ${baseImagePath} with any supported extension.`);
+      imageElement.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+      imageElement.onerror = null; // Clear the onerror handler
+      return;
+    }
+
+    const imageUrl = `${baseImagePath}.${extensions[currentExtensionIndex]}`;
+    const tempImage = new Image();
+    
+    tempImage.onload = () => {
+      // Success! The image exists. Set the src of the actual element.
+      imageElement.src = imageUrl;
+      console.log('Successfully loaded image:', imageUrl);
+    };
+
+    tempImage.onerror = () => {
+      // This extension failed, let's try the next one.
+      console.warn(`Could not find image at: ${imageUrl}. Trying next format...`);
+      currentExtensionIndex++;
+      tryNextExtension();
+    };
+    
+    tempImage.src = imageUrl;
+  }
+
+  tryNextExtension();
+}
+
 
 // Game State Management
 function startGame() {
@@ -191,17 +233,10 @@ function showQuestion() {
   // Update question content
   document.getElementById('question-text').textContent = question.text;
   
-  // Handle image loading with error fallback
+  // --- UPDATED IMAGE LOADING LOGIC ---
   const imageElement = document.getElementById('moth-image');
-  imageElement.onload = function() {
-    console.log('Image loaded successfully:', question.image);
-  };
-  imageElement.onerror = function() {
-    console.error('Failed to load image:', question.image);
-    // Fallback to a placeholder or default image
-    this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
-  };
-  imageElement.src = question.image;
+  // Call the new function to find the correct image file
+  findAndSetImage(question.image, imageElement);
   
   // Clear previous feedback and hide next button
   const feedback = document.getElementById('feedback');
@@ -534,26 +569,13 @@ window.addEventListener('resize', () => {
 
 // Image preloading and validation
 function preloadImages() {
+  const heroImageBasePath = "media/media1";
+  findAndSetImage(heroImageBasePath, new Image()); // Preload hero image
+
   questions.forEach((question, index) => {
-    const img = new Image();
-    img.onload = function() {
-      console.log(`✅ Image ${index + 1} loaded successfully:`, question.image);
-    };
-    img.onerror = function() {
-      console.error(`❌ Failed to load image ${index + 1}:`, question.image);
-    };
-    img.src = question.image;
+    // Preload each question's image
+    findAndSetImage(question.image, new Image());
   });
-  
-  // Also preload hero image
-  const heroImg = new Image();
-  heroImg.onload = function() {
-    console.log('✅ Hero image loaded successfully');
-  };
-  heroImg.onerror = function() {
-    console.error('❌ Failed to load hero image: media/media1.jpg');
-  };
-  heroImg.src = 'media/media1.jpg';
 }
 
 // Initialize
