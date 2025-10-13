@@ -46,6 +46,108 @@ const questions = [
     answer: true, 
     image: "media/media9.jpg",
     explanation: "Many adult moths feed on flower nectar, making them important pollinators!"
+  },
+  {
+    text: "Some adult moths are born without mouths and cannot eat?",
+    answer: true,
+    image: "media/media10.jpg",
+    explanation: "It's true! Species like the Luna moth don't have mouthparts and live only for about a week to mate."
+  },
+  {
+    text: "Evolved to look like bird droppings for camouflage?",
+    answer: true,
+    image: "media/media11.jpg",
+    explanation: "Yes, some moths, like the beautiful wood nymph, have markings that mimic bird droppings to avoid predators."
+  },
+  {
+    text: "Moths outnumber butterfly species by more than 10 to 1?",
+    answer: true,
+    image: "media/media12.jpg",
+    explanation: "There are over 160,000 species of moths, far outnumbering the approximately 18,500 species of butterflies."
+  },
+  {
+    text: "The famous 'wooly bear' caterpillar turns into a butterfly?",
+    answer: false,
+    image: "media/media13.jpg",
+    explanation: "The wooly bear caterpillar transforms into the Isabella tiger moth, not a butterfly."
+  },
+  {
+    text: "Can have a wingspan of nearly a foot?",
+    answer: true,
+    image: "media/media14.jpg",
+    explanation: "The Atlas moth of Southeast Asia is one of the largest moths, with a wingspan that can reach almost 12 inches."
+  },
+  {
+    text: "Some of their caterpillars live underwater?",
+    answer: true,
+    image: "media/media15.jpg",
+    explanation: "Certain species, like the China-mark moths, have aquatic caterpillars that feed on pond plants."
+  },
+  {
+    text: "Only come in dull, brown colors?",
+    answer: false,
+    image: "media/media16.jpg",
+    explanation: "Many moths are incredibly vibrant, coming in all colors of the rainbow, just like butterflies."
+  },
+  {
+    text: "Evolved much later than butterflies?",
+    answer: false,
+    image: "media/media17.jpg",
+    explanation: "Fossil records show that moths evolved long before butterflies, with some fossils dating back 190 million years."
+  },
+  {
+    text: "Can 'jam' the sonar of a hunting bat?",
+    answer: true,
+    image: "media/media18.jpg",
+    explanation: "Some tiger moths can produce ultrasonic clicks to confuse bats and disrupt their echolocation."
+  },
+  {
+    text: "A male can smell a female from over 7 miles away?",
+    answer: true,
+    image: "media/media19.jpg",
+    explanation: "Male giant silkworm moths have incredible antennae that can detect a female's pheromones from miles away."
+  },
+  {
+    text: "All adult moths will eat holes in your clothing?",
+    answer: false,
+    image: "media/media20.jpg",
+    explanation: "Only a couple of species are known for eating fabrics. Most adult moths don't eat clothes at all."
+  },
+  {
+    text: "Can be cannibals in their caterpillar stage?",
+    answer: true,
+    image: "media/media21.jpg",
+    explanation: "Some moth caterpillars, like the Dun-bar, will eat other caterpillars, including their own kind, if food is scarce."
+  },
+  {
+    text: "Are active and fly around even in the middle of winter?",
+    answer: true,
+    image: "media/media22.jpg",
+    explanation: "Some hardy moth species are adapted to fly in the cold and can be spotted on mild winter days."
+  },
+  {
+    text: "Every single moth species spins a cocoon?",
+    answer: false,
+    image: "media/media23.jpg",
+    explanation: "While many moths make cocoons, some burrow underground or into wood to pupate without one."
+  },
+  {
+    text: "All moths are attracted to artificial light?",
+    answer: false,
+    image: "media/media24.jpg",
+    explanation: "While many are drawn to light (positive phototaxis), some species are actually repelled by it."
+  },
+  {
+    text: "Can be as tiny as the tip of a pencil?",
+    answer: true,
+    image: "media/media25.jpg",
+    explanation: "Micromoths can be incredibly small, with some having a wingspan of only a few millimeters."
+  },
+  {
+    text: "One species is famous for a skull-like pattern on its back?",
+    answer: true,
+    image: "media/media26.jpg",
+    explanation: "The Death's-head hawk-moth is well-known for the spooky, skull-shaped marking on its thorax."
   }
 ];
 
